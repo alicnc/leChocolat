@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet">
     <!-- endbuild -->
-
+    
     <title>Le Chocolat: Contact Us</title>
 
 </head>
@@ -55,119 +55,118 @@
     </header>
 
     <div class="container">
-        <nav aria-label="breadcrumb">
+        <nav class="pt-3" aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Contact us</li>
+                <li class="breadcrumb-item active" aria-current="page">Menu</li>
             </ol>
         </nav>
-        <div class="row row-header">
-            <div class="col-12">
-                <h3>Contact Us</h3>
-                <hr>
-            </div>
-        </div>
+       
 
-        <div class="row row-content">
-            <div class="col-12">
-                <h3>Location Information</h3>
-            </div>
-            <div class="col-12 col-sm-4 offset-sm-1">
-                <h5>Our Address</h5>
-                <address style="font-size: 100%">
-                    121, Clear Wave Road<br>
-                    Clear Wave Road, Aloha<br>
-                    HAWAII<br>
-                    <i class="fa fa-phone"></i>: +987 6543 2100<br>
-                    <i class="fa fa-fax"></i>: +987 6543 2101<br>
-                    <i class="fa fa-envelope"></i>:
-                    <a href="mailto:chocolat@nomail.net">chocolat@nomail.net</a>
-                </address>
-            </div>
-            <div class="col-12 col-sm-6 offset-sm-1">
-                <h5>Map of our Location</h5>
-            </div>
-            <div class="col-12 col-sm-11 offset-sm-1">
-                <!-- Button group goes here -->
-                <div class="btn-group" role="group" aria-label="Communication tools">
-                    <a role="button" class="btn btn-primary" href="tel:+98765432100 "><i class="fa fa-phone"></i> Call</a>
-                    <a role="button" class="btn btn-info" href="https://wa.me/15551234567?text=This%20is%20a%20sample%20message"><i
-                            class="fa fa-whatsapp"></i> Whatsapp</a>
-                    <a role="button" class="btn btn-success" href="mailto:chocolat@nomail.net">
-                        <i class="fa fa-envelope-o"></i> Email</a>
+        <!--Menu page draft-->
+        <div class="container bg-light text-light mb-4">
+            <h1 class="p-4">Our Menu</h1>
+            <div class="row bg-light text-dark">
+                <script>
+                    let arrayOfProducts = [
+                        {
+                            "imgUrl": "https://cdn.pixabay.com/photo/2016/12/11/20/01/coffee-1900194_640.jpg",
+                            "name": "CHOCOLATE 1",
+                            "price": 110
+                        },
+                        {
+                            "imgUrl": "https://cdn.pixabay.com/photo/2016/12/11/20/01/coffee-1900194_640.jpg",
+                            "name": "CHOCOLATE 2",
+                            "price": 91
+                        },
+                        {
+                            "imgUrl": "https://cdn.pixabay.com/photo/2016/12/11/20/01/coffee-1900194_640.jpg",
+                            "name": "CHOCOLATE 3",
+                            "price": 94.5
+                        },
+                        {
+                            "imgUrl": "https://cdn.pixabay.com/photo/2016/12/11/20/01/coffee-1900194_640.jpg",
+                            "name": "CHOCOLATE 4",
+                            "price": 438.9
+                        },
+                        {
+                            "imgUrl": "https://cdn.pixabay.com/photo/2016/12/11/20/01/coffee-1900194_640.jpg",
+                            "name": "CHOCOLATE 5",
+                            "price": 20
+                        }
+                    ];
+    
+                    let perfume = {
+                            imgUrl: "https://cdn.pixabay.com/photo/2016/12/11/20/01/coffee-1900194_640.jpg",
+                            name: "CHOCOLATE 6",
+                            price: 200
+                        }
+    
+                    arrayOfProducts.push(perfume);
+    
+                    // let arr = ["A", "B", "C", "D"];
+                    for ( let counter = 0; counter < arrayOfProducts.length; counter = counter + 1 ) {
+                        // CODE HERE...
+                        document.write(
+                            "<div class='col-6 col-md-4 p-4'>" +
+                            "<div class=\"card\">"+
+                            "<img src=\""+arrayOfProducts[counter].imgUrl+"\" class=\"card-img-top\" alt=\"...\">"+
+                        "<div class=\"card-body\">" +
+                            "<h5 class=\"card-title\">"+ arrayOfProducts[counter].name+"</h5>"+
+                            "<a href=\"#\" class=\"btn btn-primary\">" + arrayOfProducts[counter].price +"</a>"+
+                            "<a href='#' class='btn btn-success ml-2'>Buy</a>" +
+                        "</div></div></div>"
+                            );
+                        // After the code the 3rd statement will automatically be executed
+                    }
+                </script>
+                <!--
+                <div class="col-6 col-md-4 p-4">
+                    <div class="card">
+                        <img src="https://guesseu.scene7.com/is/image/GuessEU/M63H24W7JF0-L302-ALTGHOST?wid=1500&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-6 col-md-4 p-4">
+                    <div class="card">
+                        <img src="https://guesseu.scene7.com/is/image/GuessEU/M63H24W7JF0-L302-ALTGHOST?wid=1500&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 p-4">
+                    <div class="card">
+                        <img src="https://guesseu.scene7.com/is/image/GuessEU/M63H24W7JF0-L302-ALTGHOST?wid=1500&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 p-4">
+                    <div class="card">
+                        <img src="https://guesseu.scene7.com/is/image/GuessEU/M63H24W7JF0-L302-ALTGHOST?wid=1500&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                -->
             </div>
         </div>
+    
 
-        <div class="row row-content">
-            <div class="col-12">
-                <h3>Send us your Feedback</h3>
-            </div>
-            <div class="col-12 col-md-9">
-                <!--Form goes here -->
-                <form>
-                    <div class="form-group row">
-                        <label for="firstname" class="col-md-2 col-form-label">First Name</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
-                        <div class="col-5 col-sm-4 col-md-3">
-                            <div class="input-group">
-                                <!--<div class="input-group-addon">(</div>-->
-                                <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
-                                <!--<div class="input-group-addon">)</div>-->
-                            </div>
-                        </div>
-                        <div class="col-7 col-sm-6 col-md-7">
-                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="emailid" class="col-md-2 col-form-label">Email</label>
-                        <div class="col-md-10">
-                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="form-check col-md-6 offset-md-2">
-                             <label class="form-check-label">
-                                 <input type="checkbox" class="form-check-input" name="approve" value="">
-                                 <strong>May we contact you?</strong>
-                             </label>
-                         </div>
-                         <div class="col-md-3 offset-md-1">
-                             <select class="form-control">
-                                 <option>Tel.</option>
-                                 <option>Email</option>
-                             </select>
-                         </div>
-                     </div>
-                     <div class="form-group row">
-                        <label for="feedback" class="col-md-2 col-form-label"
-                          >Your Feedback</label>
-                        <div class="col-md-10">
-                            <textarea class="form-control" id="feedback" name ="feedback" rows="12"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="offset-md-2 col-md-10">
-                            <button type="submit" class="btn btn-primary">Send Feedback</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-12 col-md">
-            </div>
-        </div>
+       
 
     </div>
 

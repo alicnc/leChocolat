@@ -44,7 +44,7 @@ body{
   }
 
   .carousel {
-    background:#914d15b0
+    background:#914d15;
 }
 .carousel-item {
   height: 300px;
@@ -60,3 +60,5 @@ body{
     right:0px;
     position: absolute;
     bottom: 0px;
+}
+
